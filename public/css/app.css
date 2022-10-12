@@ -1,0 +1,101 @@
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  gap: 4rem;
+  padding: 2rem 0;
+}
+
+.card-container .card {
+  position: relative;
+  border: 1px solid rgb(104, 104, 104);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  background-color: #000;
+}
+
+.card-container .card * {
+  cursor: default;
+}
+
+.card-container .card h4:not(span) {
+  color: rgb(66, 66, 196);
+  font-size: 1.5rem;
+  display: inline;
+}
+
+.card-container .card span {
+  color: rgb(199, 199, 199);
+}
+
+.card-container .card:hover {
+  background-color: rgb(128, 122, 68);
+  transition: all 600ms ease-in-out;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #FFF;
+}
+
+ul,
+li,
+menu {
+  list-style: none;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+body {
+  background-color: #282828;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+body main {
+  flex-grow: 1;
+}
+
+header {
+  padding: 2rem;
+}
+
+header ul {
+  display: flex;
+  justify-content: center;
+  gap: 10rem;
+}
+
+header ul li {
+  font-size: 2rem;
+}
+
+header ul li a:hover {
+  color: rgb(0, 93, 159);
+  text-decoration: underline;
+  transition: all 300ms ease-in-out;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main h1 {
+  color: #FFF;
+}
+
+footer {
+  background-color: #4a4a4a;
+  padding: 1rem 5rem;
+  display: flex;
+  justify-content: flex-end;
+}
+

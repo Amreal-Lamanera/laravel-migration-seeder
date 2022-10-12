@@ -1,0 +1,50 @@
+@import './movies.scss';
+@import './partials/generals';
+
+body {
+    background-color: #282828;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    main {
+        flex-grow: 1;
+    }
+}
+
+header {
+    padding: 2rem;
+
+    ul {
+        display: flex;
+        justify-content: center;
+        gap: 10rem;
+
+        li {
+            font-size: 2rem;
+
+            a:hover {
+                color: rgb(0, 93, 159);
+                text-decoration: underline;
+                transition: all 300ms ease-in-out;
+            }
+        }
+    }
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        color: #FFF;
+    }
+}
+
+footer {
+    background-color: #4a4a4a;
+    padding: 1rem 5rem;
+    display: flex;
+    justify-content: flex-end;
+}
