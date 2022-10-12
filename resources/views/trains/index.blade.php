@@ -28,13 +28,13 @@
                         <h4>
                             Orario di Partenza: 
                         </h4>
-                        <span>{{ $train->orario_partenza }}</span>
+                        <span>{{ \Carbon\Carbon::createFromFormat('H:i:s',$train->orario_partenza)->format('h:i') }}</span>
                     </div>
                     <div class="card-content">
                         <h4>
                             Orario di Arrivo: 
                         </h4>
-                        <span>{{ $train->orario_arrivo }}</span>
+                        <span>{{ \Carbon\Carbon::createFromFormat('H:i:s',$train->orario_arrivo)->format('h:i') }}</span>
                     </div>
                     <div class="card-content">
                         <h4>
