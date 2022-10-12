@@ -3,5 +3,5 @@
 @section('meta', 'Homepage')
 
 @section('content')
-    <h1>Home page - Model Controller</h1>
+    <h1>Home page - Migration Seeder</h1>
 @endsection
