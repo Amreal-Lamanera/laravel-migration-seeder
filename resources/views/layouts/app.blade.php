@@ -18,6 +18,7 @@
             <li>
                 <a href="{{ route('trains') }}">Trains</a>
             </li>
+        </ul>
     </header>
 
     <main>
